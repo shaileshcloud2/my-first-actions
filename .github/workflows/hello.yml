@@ -1,0 +1,8 @@
+name: Hello World Workflow
+on: [push]  # Trigger on code push
+jobs:
+  greet:
+    runs-on: ubuntu-latest  # Use Ubuntu VM
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
